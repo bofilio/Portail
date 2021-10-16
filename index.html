@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DGNSIC</title>
+    <!--Stylesheets----------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./Scss/dist/main.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+</head>
+
+<body>
+    <!--Header----------------------------------------------------------------------------------->
+    <div >
+        <header class="header">
+            <div class="d-flex justify-content-center align-items-center top-header">
+                <img src="./imgs/logo.png" class="mr-2 top-header-content" style="height:75%" alt="" />
+                <div class="top-header-content">
+                    <h1>DGNSIC</h1>
+                    <h5>Direction Générale du Numérique et des Systèmes d’Information et de Communication</h5>
+                </div>
+            </div>
+            <nav class="header-menu d-flex align-items-center p-2 flex-wrap">
+                <a class="header-menu-item mr-2 p-1" href="#">Accueil</a>
+                <a class="header-menu-item mr-2 p-1" href="#">Presidence</a>
+                <a class="header-menu-item mr-2 p-1" href="#">Directions</a>
+                <a class="header-menu-item mr-2 p-1" href="#">Centre de connaissance</a>
+                <a class="header-menu-item mr-2 p-1" href="#">Espace Employés</a>
+                <a class="header-menu-item mr-2 p-1" href="#">SMI</a>
+                <a class="header-menu-item mr-2 p-1" href="#">Communication</a>
+                <a class="header-menu-item mr-2 p-1" href="#">DSP</a>
+                <i style="flex-grow: 1;"></i>
+                <button class="btn">search</button>
+            </nav>
+            <div>
+
+            </div>
+        </header>
+        <!--Content----------------------------------------------------------------------------------->
+        <div class="content d-flex  justify-content-center">
+            <section class="d-flex space-around align-items-center mt-4 w-75">
+                <div class="text-center ">
+                    <h1 class="mb-3">Actualités</h1>
+                    <h5 class="mb-2">Lorem ipsum dolor sit amet, consectetuert.</h5>
+                    <button class="btn">Voir plus</button>
+                </div>
+                <div class="owl-carousel owl-theme actualite-carosel owl-loaded ml-4">
+                    <div class=" actualite">
+                        <div class="actualite-content p-2">
+                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
+                            <h6>12-10-2021</h6>
+                        </div>
+                        <img src="./imgs/img.jpg" height="100%" alt="img">
+                    </div>
+                    <div class=" actualite">
+                        <div class="actualite-content p-2">
+                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
+                            <h6>12-10-2021</h6>
+                        </div>
+                        <img src="./imgs/img2.jpg" height="100%" alt="img">
+                    </div>
+                    <div class=" actualite">
+                        <div class="actualite-content p-2">
+                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
+                            <h6>12-10-2021</h6>
+                        </div>
+                        <img src="./imgs/img.jpg" height="100%" alt="img">
+                    </div>
+                    <div class=" actualite">
+                        <div class="actualite-content p-2">
+                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
+                            <h6>12-10-2021</h6>
+                        </div>
+                        <img src="./imgs/img.jpg" height="100%" alt="img">
+                    </div>
+
+                </div>
+            </section>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <!--Scripts----------------------------------------------------------------------------------->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                margin: 10,
+                navContainerClass: "navigation",
+                navClass: ["prev", "next"],
+                center: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    400:{
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 3,
+                    },
+                    1400: {
+                        items: 4,
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
