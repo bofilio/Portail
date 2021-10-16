@@ -13,7 +13,7 @@
 
 <body>
     <!--Header----------------------------------------------------------------------------------->
-    <div >
+    <div>
         <header class="header">
             <div class="d-flex justify-content-center align-items-center top-header">
                 <img src="./imgs/logo.png" class="mr-2 top-header-content" style="height:75%" alt="" />
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <nav class="header-menu d-flex align-items-center p-2 flex-wrap">
-                <a class="header-menu-item mr-2 p-1" href="#">Accueil</a>
+                <a class="header-menu-item mr-2 p-1" href="#" >Accueil</a>
                 <a class="header-menu-item mr-2 p-1" href="#">Presidence</a>
                 <a class="header-menu-item mr-2 p-1" href="#">Directions</a>
                 <a class="header-menu-item mr-2 p-1" href="#">Centre de connaissance</a>
@@ -32,50 +32,91 @@
                 <a class="header-menu-item mr-2 p-1" href="#">Communication</a>
                 <a class="header-menu-item mr-2 p-1" href="#">DSP</a>
                 <i style="flex-grow: 1;"></i>
-                <button class="btn">search</button>
+                <button class="btn mr-4">search</button>
             </nav>
             <div>
 
             </div>
         </header>
         <!--Content----------------------------------------------------------------------------------->
-        <div class="content d-flex  justify-content-center">
-            <section class="d-flex space-around align-items-center mt-4 w-75">
+        <div class="content d-flex  align-items-center flex-column">
+            <!--Section Actalités Carosel-->
+            <section class=" d-flex space-around align-items-center mt-4 w-75">
                 <div class="text-center ">
                     <h1 class="mb-3">Actualités</h1>
                     <h5 class="mb-2">Lorem ipsum dolor sit amet, consectetuert.</h5>
                     <button class="btn">Voir plus</button>
                 </div>
-                <div class="owl-carousel owl-theme actualite-carosel owl-loaded ml-4">
+                <div class="bg-white owl-carousel owl-theme actualite-carosel owl-loaded ml-4">
                     <div class=" actualite">
                         <div class="actualite-content p-2">
-                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
-                            <h6>12-10-2021</h6>
+                            <p class="mb-1 text-meduim">Lorem ipsum dolor sit amet, consectetuert.</p>
+                            <p class="text-small">12-10-2021</p>
                         </div>
                         <img src="./imgs/img.jpg" height="100%" alt="img">
                     </div>
                     <div class=" actualite">
                         <div class="actualite-content p-2">
-                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
-                            <h6>12-10-2021</h6>
+                            <p class="mb-1 text-meduim">Lorem ipsum dolor sit amet, consectetuert.</p>
+                            <p class="text-small">12-10-2021</p>
                         </div>
                         <img src="./imgs/img2.jpg" height="100%" alt="img">
                     </div>
                     <div class=" actualite">
                         <div class="actualite-content p-2">
-                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
-                            <h6>12-10-2021</h6>
+                            <p class="mb-1 text-meduim">Lorem ipsum dolor sit amet, consectetuert.</p>
+                                <p class="text-small">12-10-2021</p>
                         </div>
                         <img src="./imgs/img.jpg" height="100%" alt="img">
                     </div>
                     <div class=" actualite">
                         <div class="actualite-content p-2">
-                            <h5>Lorem ipsum dolor sit amet, consectetuert.</h5>
-                            <h6>12-10-2021</h6>
+                            <p class="mb-1 text-meduim">Lorem ipsum dolor sit amet, consectetuert.</p>
+                            <p class="text-small">12-10-2021</p>
                         </div>
                         <img src="./imgs/img.jpg" height="100%" alt="img">
                     </div>
 
+                </div>
+            </section>
+
+            <!--Section Liens Rapides-->
+            <section class="d-flex flex-column align-items-center mt-4 bg-section vw p-2" style="height: 140px;position: relative;">
+                <p class="text-large">Liens Rapides</p>
+                <div class="d-flex flex-wrap space-around w-75 bg-white p-4" style="min-height: 150px; position: absolute;top:80px">
+                    <div class="p-2">
+                        <h5>Sites DGNSIC</h5>
+                        <ul>
+                            <li class="mb-2"><a href="#">Dévelopement</a></li>
+                            <li class="mb-2"><a href="#">Système</a></li>
+                            <li class="mb-2"><a href="#">Appro</a></li>
+                            <li class="mb-2"><a href="#">Réseau</a></li>
+                        </ul>
+                    </div>
+                    <div class="p-2">
+                        <h5>Support Technique</h5>
+                        <ul>
+                            <li class="mb-2"><a href="#">Ouverture de tickets</a></li>
+                            <li class="mb-2"><a href="#">Demande de Service</a></li>
+                            <li class="mb-2"><a href="#">Demande d’Equipement</a></li>
+                            <li class="mb-2"><a href="#">Help Desk</a></li>
+                        </ul>
+                    </div>
+                    <div class="p-2">
+                        <h5>Site de la Présidence </h5>
+                        <ul>
+                            <li class="mb-2"><a href="#">Presidence</a></li>
+                            <li class="mb-2"><a href="#">Presse</a></li>
+                            <li class="mb-2"><a href="#">Journaux</a></li>
+                        </ul>
+                    </div>
+                    <div class="p-2">
+                        <h5>Demandes</h5>
+                        <ul>
+                            <li class="mb-2"><a href="#">Demandes d’absence</a></li>
+                            <li class="mb-2"><a href="#">Demande administatif</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -108,7 +149,7 @@
                     0: {
                         items: 1,
                     },
-                    400:{
+                    400: {
                         items: 1,
                     },
                     600: {

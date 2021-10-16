@@ -1,9 +1,10 @@
 $myfont:Helvetica, sans-serif;
 $primary: #1e90ff;
 $white: #ffffff;
-$light:#F0F0F0;
+$light:#f0f0f0;
 $dark:#4D4B4B;
 $grey:rgb(173, 173, 173);
+$bg-section:rgba(47,105,255,0.1);
 $dark-text:#282828;
 $coverColor:rgba(0, 0, 0, 0.65);
 $spacing:8px;
@@ -13,9 +14,9 @@ $full:100%;
 $half:50%;
 $third:33%;
 $quarter:25%;
-$font-sizes:("small": 12px,"meduim":14px, "normal": 18px, "large": 24px,"xlarge":28px,"xxlarge":36px,"xxxlarge":48px);
+$font-sizes:("small": 12px,"meduim":16px, "normal": 18px, "large": 24px,"xlarge":28px,"xxlarge":36px,"xxxlarge":48px);
 $top-header-height:128px;
-html,body,h1,h2,h3,h4,h5,h6{
+html,body,h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;  
 }
@@ -37,26 +38,58 @@ h5{
 h6{
     font-size: map-get($font-sizes , "meduim" );
 }
+.bg-section{
+    background-color: $bg-section;
+}
+.bg-white{
+    background-color: $white;
+}
+.bottom{
+    bottom: 0;
+}
+.top{
+    top: 0;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
 button{
     text-transform:uppercase;
 }
 .text-small{
     font-size: map-get($font-sizes,"small" );
 }
+.text-meduim{
+    font-size: map-get($font-sizes,"meduim" );
+}
+.text-normal{
+    font-size: map-get($font-sizes,"normal" );
+}
+.text-large{
+    font-size: map-get($font-sizes,"large" );
+}
+
 body{
-    background-color:$white;
+    background-color:$light;
     color:$dark-text;
 }
 a{
     text-decoration: none;
 }
-
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
 /* Top Header*/
 .header{
     position: fixed;
     top:0;
     box-shadow: 5px 5px 16px $dark;
+    z-index: 100;
 }
 .top-header{
     color :$white;
@@ -68,7 +101,7 @@ a{
 }
 
 .top-header-content{
-    z-index: 1;
+    z-index: 100;
 }
 .top-header::after {
     content: "";
@@ -78,7 +111,7 @@ a{
     height: inherit;
   }
 .header-menu{
-    background-color: $light ;
+    background-color: $white ;
 }
 .header-menu-item{
     color: $dark;
@@ -182,6 +215,9 @@ margin-top: 200px;
 .flex-wrap{
     flex-wrap: wrap;
 }
+.flex-grow-1{
+    flex-grow: 1;
+}
 .text-center{
     text-align: center;
 }
@@ -204,7 +240,9 @@ margin-top: 200px;
 .w-100{
     width: $full;
 }
-
+.vw{
+    width:$window-width
+}
 
 
 .round-1{
